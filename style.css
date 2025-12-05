@@ -1,0 +1,124 @@
+/* 1. Estilos Globales para la página */
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f9; /* Fondo gris claro (como en la foto) */
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 50px;
+    margin: 0;
+}
+
+/* 2. Estilo del Contenedor Principal */
+.contenedor-lista {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 90%;
+    max-width: 450px; 
+}
+
+/* 3. Estilo del Título (Simple, sin línea divisoria, como en la foto) */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    /* Quitamos el border-bottom para que se vea como en la foto */
+    padding-bottom: 10px;
+}
+
+/* --- ESTILOS PARA LA ENTRADA DE TAREAS (Input y Botón) --- */
+/* Se adapta para que luzca simple y funcional */
+#entrada-tarea {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#input-box {
+    flex-grow: 1; 
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde simple y visible */
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    margin-right: 10px; 
+}
+
+#entrada-tarea button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Color azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+#entrada-tarea button:hover {
+    background-color: #0056b3; 
+}
+/* ----------------------------------------------------------- */
+
+
+/* 4. Estilo de la Lista (Contenedor) */
+#lista-contenedor {
+    list-style: none; /* Eliminar las viñetas */
+    padding: 0;
+}
+
+/* Estilo de cada Tarea */
+#lista-contenedor li {
+    background-color: #e9ecef; /* Fondo gris suave (Original) */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    
+    /* Adaptación para la funcionalidad (mostrar la 'X' de eliminar) */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#lista-contenedor li:hover {
+    background-color: #dee2e6; /* Gris oscuro al pasar el ratón */
+}
+
+/* 5. Estilo para la tarea marcada/completada (Clase 'checked' o la clase 'completada' estática) */
+#lista-contenedor li.checked,
+#lista-contenedor li.completada {
+    background-color: #d4edda; /* Fondo verde claro (Original) */
+    color: #155724; /* Texto verde oscuro (Original) */
+    text-decoration: line-through; 
+    opacity: 0.9; 
+}
+
+/* --- ESTILOS PARA EL BOTÓN DE ELIMINAR (la 'X') --- */
+#lista-contenedor li span {
+    display: block;
+    font-size: 20px;
+    color: #6c757d; 
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#lista-contenedor li span:hover {
+    background-color: #ffcdd2; /* Fondo rojo claro */
+    color: #d32f2f; /* Color rojo de eliminación */
+}
+/* ----------------------------------------------------------- */
+
+/* 6. Estilo de la Nota (como en la foto) */
+.nota {
+    text-align: center;
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-top: 20px;
+}

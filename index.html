@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas de la Semana</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="contenedor-lista">
+        <h1>Tareas de la Semana</h1>
+        
+        <div id="entrada-tarea">
+            <input type="text" id="input-box" placeholder="Escribe aquí tu nueva tarea">
+            <button onclick="agregarTarea()">Añadir</button>
+        </div>
+        
+        <ul id="lista-contenedor">
+            <li>Comprar comestibles</li>
+            <li>Lavar el coche</li>
+            <li>Preparar presentación</li>
+            <li>Hacer ejercicio</li>
+            <li>Leer un libro</li>
+            
+            <li class="checked">Organizar el escritorio (¡ya está hecho!)</li>
+        </ul>
+
+        <p class="nota">Llevar una vida ordena hace una vida mas feliz.</p>
+
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
